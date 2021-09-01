@@ -9,9 +9,9 @@ data class Funcionario(val nome: String, val salario: Double){
 
 fun main() {
 
-    val f1 = Funcionario("Leonor José", 2000.0)
+    val f1 = Funcionario("Leonor José", 4000.0)
     val f2 = Funcionario("Judson Paiva", 4000.0)
-    val f3 = Funcionario("Jéssica Paiva", 2000.0)
+    val f3 = Funcionario("Jéssica Paiva", 2500.0)
 
     val funcionarios = listOf(f1, f2, f3)
     funcionarios.forEach { println(it) }
@@ -22,6 +22,7 @@ fun main() {
     println("------------------------------------------------------------")
     val listaFamília = funcionarios.filter{ it.nome.contains("Paiva") }.forEach { println(it) }
 
-    
+    println("------------------------------------------------------------")
+    funcionarios.sortedBy { it.salario }.forEach { println(it) }
 
 }
