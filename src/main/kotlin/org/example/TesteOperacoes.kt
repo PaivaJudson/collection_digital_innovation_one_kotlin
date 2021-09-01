@@ -13,6 +13,9 @@ fun main() {
     println("Menor salário ${salarios.min()}")
     println("Salário médio ${salarios.average()}")
 
+    println("------------------------------------------------------------------")
+    println("Maior salário ${salarios.maxOrNull()}")
+    println("Menor salário ${salarios.minOrNull()}")
 
 
     println("------------------------------------------------------------------")
