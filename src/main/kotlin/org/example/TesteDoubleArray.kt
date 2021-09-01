@@ -11,4 +11,12 @@ fun main() {
     println("-----------------------------------------------------")
     salarios.forEachIndexed { index, d -> salarios[index] = salarios[index] + d * 0.2 }
     salarios.forEach { println(it) }
+
+
+
+    println("-----------------------------------------------------")
+    val bonus = doubleArrayOf(300.0, 400.0, 200.0, 100.0)
+    bonus.sort()
+    bonus.forEach { println(it) }
+
 }
