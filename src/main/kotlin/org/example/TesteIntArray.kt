@@ -14,4 +14,17 @@ fun main() {
         println("i = $key valor = $value")
     }
 
+    valores.forEach {
+        println(it)
+    }
+
+    for (index in valores.indices){
+        println(valores[index])
+    }
+
+    println("--------------------------------------------------------")
+    valores.sort()
+    for (index in valores.indices){
+        println(valores[index])
+    }
 }
