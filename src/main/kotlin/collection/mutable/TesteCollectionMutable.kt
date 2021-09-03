@@ -19,5 +19,18 @@ fun main() {
     lista.remove(f2)
     lista.forEach { println(it) }
 
+    println("===========================Conjunto===============================")
+
+    val conjunto = mutableSetOf(f3)
+    conjunto.forEach { println(it) }
+
+    println("==================================================================")
+    conjunto.add(f1)
+    conjunto.add(f2)
+    conjunto.forEach { println(it) }
+
+    println("==================================================================")
+    conjunto.remove(f2)
+    conjunto.forEach { println(it) }
 
 }
