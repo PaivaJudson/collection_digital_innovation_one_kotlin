@@ -18,6 +18,11 @@ fun main() {
 
     println(repositorio.fundById("segundo"))
 
+    println("-------------------------------------------")
 
+    repositorio.findAll().forEach { println(it) }
 
+    println("-------------------------------------------")
+    repositorio.remove("segundo")
+    repositorio.findAll().forEach { println(it) }
 }
